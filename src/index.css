@@ -1,0 +1,82 @@
+:root{
+    --primary: #d81e5d;
+    --secondary: #8c38ff;
+    --dark: #131a26;
+    --light: #eee;
+}
+*{
+  margin : 0;
+  padding : 0;
+  box-sizing : boarder-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+body {
+    background-color:var(--light);
+
+}
+
+.fiApp {
+  display: flex;
+  min-height : 100vh;
+  align-items : center;
+  justify-content : center;
+  padding:16px;
+
+
+}
+.ficalculator {
+  width : 100%;
+  max-width : 400px;
+  background-color: #FFF;
+  border-radius : 16px;
+  overflow : hidden;
+  box-shadow : 0px 2px 64px rgba(0,0,0,0.2);
+
+
+
+}
+.fidisplay {
+  padding:16px;
+  text-align: right;
+  background-color:  var(--dark);
+  color: var(--light);
+  font-size: 24x;
+  font-weight: 300 ;
+}
+.fidisplay span{
+  font-size: 14px;
+  color: #888;
+
+}
+button{
+  appearance: none;
+  border: none;
+  outline: none;
+  color: #FFF;
+  font-size: 20px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.4s;
+
+}
+button:hover {
+  opacity:0.9;
+}
+.fioperators{
+  display: flex;
+}
+.fioperators button {
+   flex: 1 1 0%;
+  background-color: var(--primary);
+  font-weight: 700;
+}
+.fidigits{
+  display: flex;
+  flex-wrap:wrap;
+
+}
+.fidigits button{
+  flex : 1 1 33.333%;
+  max-width: 33.333%;
+  background-color: var(--dark);
+}
