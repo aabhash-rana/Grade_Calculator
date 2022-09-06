@@ -44,13 +44,13 @@ function App() {
     setCalc (value);
   }
   return (
-    <div className = "fiApp">
-      <div className = "ficalculator">
-        <div className = "fidisplay">
+    <div className = "fi-App">
+      <div className = "fi-calculator">
+        <div className = "fi-display">
           {result ? <span>({result})</span>:''} 
           {calc || "0"}
         </div>
-        <div className = "fioperators">
+        <div className = "fi-operators">
           <button onClick = {() => updateCalc('/')}> / </button>
           <button onClick = {() => updateCalc('*')}> * </button>
           <button onClick = {() => updateCalc('+')}> + </button>
@@ -58,7 +58,7 @@ function App() {
 
           <button onClick={deletelast}> DEL </button>
         </div>
-        <div className = "fidigits">
+        <div className = "fi-digits">
           {createDigits()}
         <button onClick = {() => updateCalc('0')}> 0 </button>
         <button onClick = {() => updateCalc('.')}> . </button>
