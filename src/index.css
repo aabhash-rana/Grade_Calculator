@@ -43,6 +43,7 @@ body {
   font-size: 24x;
   font-weight: 300 ;
 }
+
 .fidisplay span{
   font-size: 14px;
   color: #888;
@@ -80,3 +81,4 @@ button:hover {
   max-width: 33.333%;
   background-color: var(--dark);
 }
+ 
