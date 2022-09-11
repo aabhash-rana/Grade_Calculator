@@ -44,7 +44,7 @@ function App() {
     setCalc (value);
   }
   return (
-    <div className = "fi-App">
+    <div className = "App">
       <div className = "fi-calculator">
         <div className = "fi-display">
           {result ? <span>({result})</span>:''} 
